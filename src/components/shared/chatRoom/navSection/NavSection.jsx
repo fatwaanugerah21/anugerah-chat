@@ -1,7 +1,7 @@
-import Contact from "./../../Contact/Contact";
 import { AddContact, Search } from "./../../Shared";
 import { useEffect } from "react";
 import "./NavSection.css";
+import ContactLists from "./contactLists/ContactLists";
 
 const NavSection = () => {
   const isPhone = window.innerWidth <= 500;
@@ -39,17 +39,7 @@ const NavSection = () => {
         </div>
         <Search />
       </div>
-      <div className="contact-lists no-scrollbar" id="contact-lists">
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-      </div>
+      <ContactLists />
     </div>
   );
 };
