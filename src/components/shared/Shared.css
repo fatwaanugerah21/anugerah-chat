@@ -32,6 +32,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
 .message-component img {
@@ -40,10 +41,26 @@
 
 .message-component .message {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-top-left-radius: 20px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 20px;
-  max-width: 250px;
+  max-width: 350px;
+}
+
+.message-component .message p {
+  position: relative;
+}
+
+.message-component .message .row {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .sent {
@@ -67,4 +84,3 @@
       -ms-flex-order: 4;
           order: 4;
 }
-/*# sourceMappingURL=Shared.css.map */

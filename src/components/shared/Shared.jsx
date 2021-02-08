@@ -33,9 +33,15 @@ export const Message = ({ sent }) => {
         alt=""
         className="sender-picture avatar-sm circle-avatar"
       />
-      <div className="message bg-white soft-shadow">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
-        adipisci!
+      <div className="message f-c bg-white soft-shadow">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
+          adipisci!
+        </p>
+
+        <div className="row">
+          <small className="time">1:09 PM</small>
+        </div>
       </div>
     </div>
   );

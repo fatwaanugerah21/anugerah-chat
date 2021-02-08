@@ -4,23 +4,29 @@ import { useEffect } from "react";
 import "./NavSection.css";
 
 const NavSection = () => {
+  const isPhone = window.innerWidth <= 500;
+
   useEffect(() => {
-    const contactListsDom = document.getElementById("contact-lists");
-    let firstPosition = contactListsDom.scrollTop;
-    function scrollHandler() {
-      const chatAppDOM = document.querySelector(".chat-app");
-      const currentPosition = contactListsDom.scrollTop;
+    if (isPhone) {
+      const contactListsDom = document.getElementById("contact-lists");
+      let firstPosition = contactListsDom.scrollTop;
+      function scrollHandler() {
+        const chatAppDOM = document.querySelector(".chat-app");
+        const currentPosition = contactListsDom.scrollTop;
 
-      if (firstPosition < currentPosition)
-        chatAppDOM.scrollBy({ top: 50, behavior: "smooth" });
-      if (firstPosition > currentPosition)
-        chatAppDOM.scrollBy({ top: -50, behavior: "smooth" });
-      firstPosition = currentPosition;
+        if (firstPosition < currentPosition)
+          chatAppDOM.scrollBy({ top: 50, behavior: "smooth" });
+        if (firstPosition > currentPosition)
+          chatAppDOM.scrollBy({ top: -50, behavior: "smooth" });
+        firstPosition = currentPosition;
+      }
+
+      contactListsDom.addEventListener("scroll", () => scrollHandler());
+
+      return contactListsDom.removeEventListener("scroll", () =>
+        scrollHandler()
+      );
     }
-
-    contactListsDom.addEventListener("scroll", () => scrollHandler());
-
-    return contactListsDom.removeEventListener("scroll", () => scrollHandler());
   });
 
   return (

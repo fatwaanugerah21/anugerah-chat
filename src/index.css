@@ -29,13 +29,22 @@ code {
 }
 
 .avatar-sm {
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  max-width: 35px;
+  max-height: 35px;
 }
 
 .avatar-md {
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.f-c {
+  display: flex;
+  flex-direction: column;
 }
 
 .no-scrollbar::-webkit-scrollbar {

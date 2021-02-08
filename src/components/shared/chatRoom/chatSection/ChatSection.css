@@ -54,6 +54,10 @@
 
 @media (max-width: 500px) {
   .chat-section {
-    display: none;
+    height: 96%;
+  }
+  .chat-section .input {
+    position: fixed;
+    bottom: 20px;
   }
 }

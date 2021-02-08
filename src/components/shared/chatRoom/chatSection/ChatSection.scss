@@ -46,6 +46,11 @@
   }
 
   @media (max-width: 500px) {
-    display: none;
+    height: 96%;
+
+    .input {
+      position: fixed;
+      bottom: 20px;
+    }
   }
 }
