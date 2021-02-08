@@ -47,4 +47,5 @@ const NavSection = () => {
     </div>
   );
 };
+
 export default NavSection;

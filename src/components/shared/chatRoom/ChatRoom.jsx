@@ -1,5 +1,5 @@
 import "./ChatRoom.css";
-import ChatSection from "./../chatSection/ChatSection";
+import ChatSection from "./chatSection/ChatSection";
 import NavSection from "./navSection/NavSection";
 
 const ChatRoom = () => {

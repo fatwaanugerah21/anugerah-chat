@@ -51,4 +51,9 @@
   background-color: transparent;
   width: 15px;
 }
-/*# sourceMappingURL=ChatSection.css.map */
+
+@media (max-width: 500px) {
+  .chat-section {
+    display: none;
+  }
+}

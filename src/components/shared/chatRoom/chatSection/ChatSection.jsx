@@ -1,6 +1,5 @@
-import { ChatAppBar } from "../Shared";
+import { ChatAppBar, Message } from "../../Shared";
 import "./ChatSection.css";
-import { Message } from "./../Shared";
 
 const ChatSection = () => {
   return (
