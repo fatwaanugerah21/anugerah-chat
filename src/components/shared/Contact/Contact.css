@@ -1,0 +1,16 @@
+.contact {
+  padding: 19px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.contact img {
+  margin-right: 10px;
+}
+
+.contact:hover,
+.active-contact {
+  background-color: rgba(0, 0, 255, 0.1);
+  border-left: 1px solid #4949ee;
+}
+/*# sourceMappingURL=Contact.css.map */

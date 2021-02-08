@@ -1,0 +1,22 @@
+.chat-app {
+  background-color: #2155bf;
+  width: 90vw;
+  height: 97vh;
+  border-radius: 50px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.3fr 3fr;
+      grid-template-columns: 0.3fr 3fr;
+}
+
+@media (max-width: 500px) {
+  .chat-app {
+    width: 100vw;
+    border-radius: 0;
+    height: 100vh;
+    display: block;
+    overflow: auto;
+  }
+}
+/*# sourceMappingURL=ChatApp.css.map */

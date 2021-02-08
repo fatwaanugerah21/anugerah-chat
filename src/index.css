@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: background-color, height 250ms;
+}
+
+body {
+  background-color: #e3ebf8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.circle-avatar {
+  border-radius: 50%;
+}
+
+.padding-sm {
+  padding: 20px 20px 10px;
+}
+
+.avatar-sm {
+  width: 35px;
+  height: 35px;
+}
+
+.avatar-md {
+  width: 50px;
+  height: 50px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .m-f-c {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.f-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.contact-name {
+  font-size: 13pt;
+}
+
+.contact-info {
+  font-size: 10pt;
+}
+
+img {
+  object-fit: cover;
+}
+
+.soft-shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.1);
+}
+
+.a-c {
+  align-items: center;
+}
+
+.c-justify {
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+}
+
+.full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}

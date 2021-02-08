@@ -1,0 +1,54 @@
+.chat-section {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat-section .messages {
+  overflow: auto;
+  height: 76%;
+}
+
+.chat-section .input {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 50px;
+  margin-left: 2.5%;
+  border-radius: 30px;
+  margin-top: -3.4%;
+  z-index: 1000;
+}
+
+.chat-section .input .extras {
+  margin: 10px;
+  padding: 8px 12px;
+  font-size: 14pt;
+}
+
+.chat-section .input * {
+  outline: none;
+  border: none;
+}
+
+.chat-section .input form {
+  width: 100%;
+}
+
+.chat-section .input form input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+}
+
+.chat-section .input form button {
+  -webkit-transform: translate(-25px, 3px);
+          transform: translate(-25px, 3px);
+  background-color: transparent;
+  width: 15px;
+}
+/*# sourceMappingURL=ChatSection.css.map */
